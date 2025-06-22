@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CampingGo - Penyewaan alat camping dan outdoor di Sulawesi Barat"
+    />
+    <meta
+      name="keywords"
+      content="alat camping, sewa tenda, perlengkapan outdoor, Sulawesi, hiking, adventure"
+    />
+    <meta name="author" content="CampingGo" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="CampingGo - Sewa Alat Camping Terpercaya"
+    />
+    <meta
+      property="og:description"
+      content="Sewa tenda, kompor portable, matras, dan lainnya untuk petualanganmu di alam terbuka!"
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+    />
+    <meta property="og:url" content="http://www.campinggo.id" />
+    <title>CampingGo - Sewa Alat Camping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fdfbf7;
+      }
+      .cta-button {
+        transition: all 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #facc15;
+        color: #1e3a8a;
+        transform: scale(1.05);
+      }
+      .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="relative">
+    <!-- Header -->
+    <header
+      class="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="logo-camping.png" alt="Logo CampingGo" class="h-10" />
+          <span class="ml-3 text-xl font-bold">CampingGo</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html#beranda" class="hover:text-yellow-400">Beranda</a>
+          <a href="index.html#produk" class="hover:text-yellow-400">Produk</a>
+          <a href="index.html#tentang" class="hover:text-yellow-400">Tentang</a>
+          <a href="index.html#kontak" class="hover:text-yellow-400">Kontak</a>
+          <a href="login.html" class="hover:text-yellow-400">Login</a>
+          <a href="daftar.html" class="hover:text-yellow-400">Daftar</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Login Page -->
+    <section
+      class="min-h-screen flex items-center justify-center bg-yellow-50 py-16"
+    >
+      <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-8">
+        <h2 class="text-2xl font-bold mb-6 text-center text-blue-900">
+          Login ke CampingGo
+        </h2>
+        <form onsubmit="return loginUser(event)">
+          <input
+            type="text"
+            id="username"
+            placeholder="admin"
+            required
+            class="w-full px-4 py-2 mb-4 border rounded"
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="12345"
+            required
+            class="w-full px-4 py-2 mb-4 border rounded"
+          />
+          <button
+            type="submit"
+            class="w-full bg-blue-900 text-white py-2 rounded hover:bg-yellow-400 hover:text-blue-900 transition"
+          >
+            <a href="index.html">Masuk</a>
+          </button>
+          <p id="login-status" class="mt-4 text-center text-red-500"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 CampingGo. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fdfbf7;
+}
+.cta-button {
+  transition: all 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #facc15;
+  color: #1e3a8a;
+  transform: scale(1.05);
+}
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
