@@ -56,33 +56,30 @@
   </head>
   <body class="relative">
     <!-- Header -->
-    <header class="bg-red-800 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <!-- Logo -->
-    <div class="flex items-center">
-      <img src="https://i.pinimg.com/736x/2c/ba/8d/2cba8d5a3d1afc5c029d8ccebb0df43b.jpg" alt="Logo CampingGo" class="h-10" />
-      <span class="ml-3 text-xl font-bold">CampingGo</span>
-    </div>
-
-    <!-- Hamburger -->
-    <button id="menu-toggle" class="md:hidden block focus:outline-none">
-      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
-        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-
-    <!-- Menu -->
-    <nav id="menu" class="hidden md:flex md:space-x-6 md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-red-800 md:bg-transparent px-6 py-4 md:py-0 flex-col md:flex-row space-y-4 md:space-y-0">
-      <a href="#beranda" class="hover:text-yellow-400">Beranda</a>
-      <a href="#produk" class="hover:text-yellow-400">Produk</a>
-      <a href="#tentang" class="hover:text-yellow-400">Tentang</a>
-      <a href="#kontak" class="hover:text-yellow-400">Kontak</a>
-      <a href="login.html" class="hover:text-yellow-400">Login</a>
-      <a href="daftar.html" class="hover:text-yellow-400">Daftar</a>
-    </nav>
-  </div>
-</header>
+   <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <div class="flex items-center">
+          <img src="https://i.pinimg.com/736x/2c/ba/8d/2cba8d5a3d1afc5c029d8ccebb0df43b.jpg" alt="Logo CampingGo" class="h-10" />
+          <span class="ml-3 text-xl font-bold">CampingGo</span>
+        </div>
+        <!-- Tombol Hamburger -->
+        <button id="menu-toggle" class="md:hidden block focus:outline-none">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <!-- Navigasi -->
+      <nav id="menu" class="hidden md:flex flex-col md:flex-row md:items-center md:justify-end md:space-x-6 space-y-4 md:space-y-0 px-6 pb-4 md:pb-0 bg-blue-900 md:bg-transparent">
+        <a href="index.html#beranda" class="hover:text-yellow-400">Beranda</a>
+        <a href="index.html#produk" class="hover:text-yellow-400">Produk</a>
+        <a href="index.html#tentang" class="hover:text-yellow-400">Tentang</a>
+        <a href="index.html#kontak" class="hover:text-yellow-400">Kontak</a>
+        <a href="login.html" class="hover:text-yellow-400">Login</a>
+        <a href="daftar.html" class="hover:text-yellow-400">Daftar</a>
+      </nav>
+    </header>
     <!-- Login Page -->
     <section
       class="min-h-screen flex items-center justify-center bg-yellow-50 py-16"
@@ -123,15 +120,15 @@
         <p>&copy; 2025 CampingGo. Semua hak dilindungi.</p>
       </div>
     </footer>
-    <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
-
-  menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-</script>
-
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+        toggle.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
